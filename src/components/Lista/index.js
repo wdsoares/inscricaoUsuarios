@@ -20,7 +20,6 @@ export default class Lista extends Component
                         <thead>
                             <tr>
                             <th>Nome</th>
-                            <th>Email</th>
                             <th>Cidade</th>
                             </tr>
                         </thead>
@@ -28,7 +27,6 @@ export default class Lista extends Component
                             { this.props.list.map((item, index) => 
                             <tr key = {index}>
                                 <td>{item.name}</td>
-                                <td>{item.email}</td>
                                 <td>{item.address.city}</td>
                             </tr>)}
                         </tbody>
