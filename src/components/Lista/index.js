@@ -19,7 +19,6 @@ export default class Lista extends Component
                     <Table striped bordered hover className="mt-2">
                         <thead>
                             <tr>
-                            <th>#</th>
                             <th>Nome</th>
                             <th>Email</th>
                             <th>Cidade</th>
@@ -28,7 +27,6 @@ export default class Lista extends Component
                         <tbody>
                             { this.props.list.map((item, index) => 
                             <tr key = {index}>
-                                <th scope="row">{index}</th>
                                 <td>{item.name}</td>
                                 <td>{item.email}</td>
                                 <td>{item.address.city}</td>
